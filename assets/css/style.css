@@ -3,8 +3,33 @@
   padding: 0;
 }
 
+:root {
+  --br: #232323;
+  --br2: #161616;
+  --accent: white;
+}
+
+.appear {
+  opacity: 1 !important;
+  -webkit-transform: translate(0) !important;
+          transform: translate(0) !important;
+}
+
+.fader {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  opacity: 0;
+}
+
 body, html {
   overflow-x: hidden;
+  font-family: 'Montserrat';
+  background: var(--br);
+  color: var(--accent);
 }
 
 img {
@@ -16,6 +41,7 @@ img {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  border-bottom: var(--accent) 1px solid;
 }
 
 #landing #nav {
@@ -60,10 +86,8 @@ img {
   right: 0;
   height: 100vh;
   width: 100%;
-  background-image: url(/img/landing.jpg);
+  background-image: url(/img/ldn.jpg);
   z-index: -1;
-  -webkit-clip-path: polygon(68% 71%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(68% 71%, 100% 0%, 100% 100%, 0% 100%);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,9 +125,9 @@ img {
 
 #landing #page #txt #btns a {
   padding: 0.8rem;
-  border: solid 1px black;
+  border: solid 1px var(--accent);
   text-decoration: none;
-  color: black;
+  color: var(--accent);
   margin: 0 auto;
   position: relative;
 }
@@ -120,7 +144,11 @@ img {
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% - 12px);
-  background: white;
+  background: url(/img/ldn.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   -webkit-transform: scaleY(1);
@@ -139,7 +167,11 @@ img {
   top: -2px;
   height: calc(100% + 4px);
   width: calc(100% - 12px);
-  background: white;
+  background: url(/img/ldn.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   -webkit-transform: scaleX(1);
@@ -152,6 +184,7 @@ img {
 }
 
 #SP {
+  background: var(--br2);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -165,8 +198,14 @@ img {
 }
 
 #SP .r {
-  margin: 5% 0;
+  margin: 5% 2%;
   text-align: center;
+}
+
+#SP .r p {
+  font-size: calc(0.5rem + 0.5vw);
+  width: 90%;
+  margin: 0 auto;
 }
 
 #SP .r div {
@@ -186,12 +225,25 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  #cta h3 {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    margin-top: 20%;
+  }
+  #cta h4 {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+    margin-top: 20%;
+  }
+}
+
 #f {
-  height: 200vh;
+  border-bottom: var(--accent);
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (50vh)[4];
-      grid-template-rows: repeat(4, 50vh);
+  -ms-grid-rows: (60vh)[4];
+      grid-template-rows: repeat(4, 60vh);
 }
 
 #f .f1 {
@@ -214,7 +266,7 @@ img {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 65%;
 }
 
 #f .f .txt {
@@ -234,26 +286,36 @@ img {
           justify-content: center;
 }
 
+#f .f .txt h3, #f .f .txt p {
+  background: #232323;
+  opacity: 0.8;
+  padding: 0.5rem;
+}
+
 #f .f2 .txt, #f .f4 .txt {
   margin-left: auto;
 }
 
 #specs {
-  height: 30vh;
-  min-height: 350px;
+  background: var(--br2);
+  width: 100%;
+}
+
+#specs div {
   width: 80%;
-  margin: 5% auto;
+  margin: 0 auto;
+  padding: 5% 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 70%;
       grid-template-columns: 1fr 70%;
 }
 
-#specs ul {
+#specs div ul {
   list-style: none;
 }
 
-#specs ul li {
+#specs div ul li {
   margin-bottom: 3%;
 }
 
@@ -265,7 +327,7 @@ img {
   background-size: cover;
   background-image: url(/img/cta.jpg);
   width: 100%;
-  color: white;
+  color: var(--accent);
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (250px)[3];
@@ -273,17 +335,14 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 #cta h3 {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
   margin-top: 20%;
 }
 
 #cta h4 {
-  -webkit-transform: translateX(300px);
-          transform: translateX(300px);
   margin-top: 20%;
 }
 
@@ -295,14 +354,14 @@ img {
 #cta div a {
   text-decoration: none;
   padding: 2rem 2.5em;
-  border: 1px solid white;
+  border: 1px solid var(--accent);
   color: inherit;
   height: 40px;
   width: 100px;
   text-align: center;
 }
 
-footer {
+#footer {
   padding-top: 5%;
   height: 25vh;
   display: -ms-grid;
@@ -313,12 +372,12 @@ footer {
   margin: 0 auto;
 }
 
-footer div {
+#footer div {
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-footer ul {
+#footer ul {
   margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,7 +388,19 @@ footer ul {
           flex-direction: column;
 }
 
-footer ul a {
+#footer ul a {
   margin-bottom: 2%;
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+}
+
+footer {
+  padding-bottom: 5%;
+}
+
+footer p {
+  text-align: center;
+  color: #666666;
 }
 /*# sourceMappingURL=style.css.map */
