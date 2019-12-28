@@ -202,10 +202,15 @@ img {
   text-align: center;
 }
 
+#SP .r h4 {
+  margin: 0.5% auto;
+  opacity: 0.8;
+}
+
 #SP .r p {
   font-size: calc(0.5rem + 0.5vw);
-  width: 90%;
-  margin: 0 auto;
+  width: 50%;
+  margin: 0.5% auto;
 }
 
 #SP .r div {
@@ -222,6 +227,12 @@ img {
   #SP {
     -ms-grid-columns: (420px)[auto-fill];
         grid-template-columns: repeat(auto-fill, 420px);
+  }
+  #f p {
+    font-size: calc(0.5rem + 0.5vw);
+  }
+  #f .f {
+    background-size: cover;
   }
 }
 
@@ -352,6 +363,7 @@ img {
 }
 
 #cta div a {
+  position: relative;
   text-decoration: none;
   padding: 2rem 2.5em;
   border: 1px solid var(--accent);
@@ -359,6 +371,57 @@ img {
   height: 40px;
   width: 100px;
   text-align: center;
+}
+
+#cta div a span {
+  position: relative;
+  z-index: 3;
+}
+
+#cta div a:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: url(/img/cta.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+#cta div a:hover:before {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+#cta div a:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: url(/img/cta.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#cta div a:hover:after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
 }
 
 #footer {
