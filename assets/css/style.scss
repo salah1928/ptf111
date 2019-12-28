@@ -160,9 +160,7 @@ img{
         text-align: center;
     }
 }
-.hidden{
-    display: none;
-}
+
 @media (max-width:1200px){
     #landing{
         #nav{
@@ -304,7 +302,7 @@ img{
     position: relative;
     display: grid;
     grid-template-rows: repeat(4,60vh);
-    .f1{background-image: url(/img/img.png);}
+    .f1{background-image: url(/img/img.jpg);}
     .f2{background-image: url(/img/dsn.png);}
     .f3{background-image: url(/img/str.jpg);}
     .f4{background-image: url(/img/dsp.png);}
@@ -393,7 +391,7 @@ img{
 
     padding-top: 5%;
     
-    display: none ;
+    display: grid ;
     grid-template-columns: repeat(4,1fr);
     width: 90%;
     margin: 0 auto;
@@ -442,7 +440,7 @@ footer{
     display: none !important;
 }
 .hidden1{
-    display: grid !important;
+    display: none !important;
     grid-template-columns: repeat(4,1fr);
     width: 90%;
     margin: 0 auto;

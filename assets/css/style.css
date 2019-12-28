@@ -198,10 +198,6 @@ img {
   border-radius: 100px;
 }
 
-.hidden {
-  display: none;
-}
-
 @media (max-width: 1200px) {
   #landing #nav ul i {
     display: block;
@@ -344,7 +340,7 @@ img {
 }
 
 #f .f1 {
-  background-image: url(/img/img.png);
+  background-image: url(/img/img.jpg);
 }
 
 #f .f2 {
@@ -462,7 +458,8 @@ img {
 
 #footerHide {
   padding-top: 5%;
-  display: none;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   width: 90%;
@@ -529,8 +526,7 @@ footer p {
 }
 
 .hidden1 {
-  display: -ms-grid !important;
-  display: grid !important;
+  display: none !important;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   width: 90%;
