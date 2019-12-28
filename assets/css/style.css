@@ -132,57 +132,6 @@ img {
   position: relative;
 }
 
-#landing #page #txt #btns a span {
-  position: relative;
-  z-index: 3;
-}
-
-#landing #page #txt #btns a:before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 12px);
-  background: url(/img/ldn.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-}
-
-#landing #page #txt #btns a:hover:before {
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-
-#landing #page #txt #btns a:after {
-  content: '';
-  position: absolute;
-  left: 6px;
-  top: -2px;
-  height: calc(100% + 4px);
-  width: calc(100% - 12px);
-  background: url(/img/ldn.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-#landing #page #txt #btns a:hover:after {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-}
-
 #SP {
   background: var(--br2);
   -webkit-box-pack: center;
@@ -246,6 +195,98 @@ img {
     -webkit-transform: translateX(300px);
             transform: translateX(300px);
     margin-top: 20%;
+  }
+  #landing #page #btns a span {
+    position: relative;
+    z-index: 3;
+  }
+  #landing #page #btns a:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: url(/img/ldn.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  #landing #page #btns a:hover:before {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  #landing #page #btns a:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: url(/img/ldn.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  #landing #page #btns a:hover:after {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  #cta div a span {
+    position: relative;
+    z-index: 3;
+  }
+  #cta div a:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: url(/img/cta.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  #cta div a:hover:before {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  #cta div a:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: url(/img/cta.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  #cta div a:hover:after {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
 }
 
@@ -371,57 +412,6 @@ img {
   height: 40px;
   width: 100px;
   text-align: center;
-}
-
-#cta div a span {
-  position: relative;
-  z-index: 3;
-}
-
-#cta div a:before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 12px);
-  background: url(/img/cta.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-}
-
-#cta div a:hover:before {
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-
-#cta div a:after {
-  content: '';
-  position: absolute;
-  left: 6px;
-  top: -2px;
-  height: calc(100% + 4px);
-  width: calc(100% - 12px);
-  background: url(/img/cta.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-#cta div a:hover:after {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
 }
 
 #footer {

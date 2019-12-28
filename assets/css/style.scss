@@ -97,48 +97,7 @@ img{
                     position: relative;
                     
                 }
-                a span{
-                    position: relative;
-                    z-index: 3;
-                }
-                a:before{
-                    content: '';
-                    position: absolute;
-                    top: 6px;
-                    left: -2px;
-                    width: calc(100% + 4px);
-                    height: calc(100% - 12px);
-                    background: url(/img/ldn.jpg);
-                    background-attachment: fixed;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    transition: 0.5s ease-in-out;
-                    transform: scaleY(1);
-                    
-                }
-                a:hover:before{
-                    transform: scaleY(0);
-                }
-                a:after{
-                    content: '';
-                    position: absolute;
-                    left: 6px;
-                    top: -2px;
-                    height: calc(100% + 4px);
-                    width: calc(100% - 12px);
-                    background: url(/img/ldn.jpg);
-                    background-attachment: fixed;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    transition: 0.5s ease-in-out;
-                    transform: scaleX(1);
-                    
-                }
-                a:hover:after{
-                    transform: scaleX(0);
-                }
+               
             }
         }
     }
@@ -201,6 +160,95 @@ img{
             margin-top: 20%;
         }
     }
+    #landing{#page{#btns{
+        a span{
+            position: relative;
+            z-index: 3;
+        }
+        a:before{
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% - 12px);
+            background: url(/img/ldn.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.5s ease-in-out;
+            transform: scaleY(1);
+            
+        }
+        a:hover:before{
+            transform: scaleY(0);
+        }
+        a:after{
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: -2px;
+            height: calc(100% + 4px);
+            width: calc(100% - 12px);
+            background: url(/img/ldn.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.5s ease-in-out;
+            transform: scaleX(1);
+            
+        }
+        a:hover:after{
+            transform: scaleX(0);
+        }
+    }}}
+    #cta{div{
+        a span{
+            position: relative;
+            z-index: 3;
+        }
+        a:before{
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% - 12px);
+            background: url(/img/cta.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.5s ease-in-out;
+            transform: scaleY(1);
+            
+        }
+        a:hover:before{
+            transform: scaleY(0);
+        }
+        a:after{
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: -2px;
+            height: calc(100% + 4px);
+            width: calc(100% - 12px);
+            background: url(/img/cta.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.5s ease-in-out;
+            transform: scaleX(1);
+            
+        }
+        a:hover:after{
+            transform: scaleX(0);
+        }
+        
+    }}
 }
 // @media(max-width: 1366px) {
 //     #br {
@@ -291,48 +339,6 @@ img{
             height: 40px;
             width: 100px;
             text-align: center;
-        }
-        a span{
-            position: relative;
-            z-index: 3;
-        }
-        a:before{
-            content: '';
-            position: absolute;
-            top: 6px;
-            left: -2px;
-            width: calc(100% + 4px);
-            height: calc(100% - 12px);
-            background: url(/img/cta.jpg);
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            transition: 0.5s ease-in-out;
-            transform: scaleY(1);
-            
-        }
-        a:hover:before{
-            transform: scaleY(0);
-        }
-        a:after{
-            content: '';
-            position: absolute;
-            left: 6px;
-            top: -2px;
-            height: calc(100% + 4px);
-            width: calc(100% - 12px);
-            background: url(/img/cta.jpg);
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            transition: 0.5s ease-in-out;
-            transform: scaleX(1);
-            
-        }
-        a:hover:after{
-            transform: scaleX(0);
         }
         
     }
