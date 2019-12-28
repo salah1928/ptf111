@@ -120,6 +120,7 @@ img{
         p{
             font-size: calc(0.5rem + 0.5vw);
             width: 50%;
+            min-width: 250px;
             margin: 0.5% auto;
         }
         div{
@@ -143,10 +144,27 @@ img{
         p{
             font-size: calc(0.5rem + 0.5vw);
         }
-        .f{
-           
-           background-size:cover;
-        }
+        .f{    
+            background-attachment: unset;
+            background-position: center;
+            
+            background-size: 100%;
+         .txt{
+             width: 80%;
+             max-width: 300px;
+             height: 100%;
+             
+             margin-left: 5%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             h3,p{
+                 background: #232323;
+                 opacity: 0.8;
+                 padding: 0.5rem;
+             }
+         }
+     }
     }
 }
 @media(min-width:1200px){
@@ -250,11 +268,6 @@ img{
         
     }}
 }
-// @media(max-width: 1366px) {
-//     #br {
-//       background-attachment: scroll;
-//     }
-//   }
 #f{
     border-bottom: var(--accent);
     display: grid;

@@ -1,5 +1,5 @@
 const ps = document.querySelectorAll('.fader')
-console.log(ps);
+
 
 const appearopts = {
     threshold: 1,
