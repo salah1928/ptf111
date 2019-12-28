@@ -1,5 +1,6 @@
 const ps = document.querySelectorAll('.fader')
-
+const hamburger = document.getElementById("ham")
+const navl =  document.querySelectorAll('.navL')
 
 const appearopts = {
     threshold: 1,
@@ -22,3 +23,9 @@ const appearOnScroll = new IntersectionObserver(function(e,observer){
 ps.forEach(p=>{
     appearOnScroll.observe(p)
 })
+
+function showNav(){
+    navl.forEach(l=>{
+        l.classList.toggle('show')
+    })
+}

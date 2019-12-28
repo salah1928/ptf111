@@ -3,6 +3,10 @@
     padding: 0;
 
 }
+.show{
+    display: block !important;
+    transform: translate(0) !important;
+}
 :root{
     --br : #232323;
     --br2 : #161616;
@@ -51,7 +55,12 @@ img{
             display: flex;
             list-style: none;
             justify-content: space-between;
+            
+            i{
+                display: none;
+            }
         }
+        
     }
     #page{
         height: 100%;
@@ -140,6 +149,21 @@ img{
     display: none;
 }
 @media (max-width:1200px){
+    #landing{
+        #nav{
+            ul{
+                i{
+                    display: block;
+                    margin-left: auto;
+                }
+
+                li{
+                    display: none;
+                }
+            }
+
+        }
+    }
     #SP{
         grid-template-columns: repeat(auto-fill,420px);
     }

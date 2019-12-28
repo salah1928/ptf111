@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+.show {
+  display: block !important;
+  -webkit-transform: translate(0) !important;
+          transform: translate(0) !important;
+}
+
 :root {
   --br: #232323;
   --br2: #161616;
@@ -73,6 +79,10 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#landing #nav ul i {
+  display: none;
 }
 
 #landing #page {
@@ -178,6 +188,13 @@ img {
 }
 
 @media (max-width: 1200px) {
+  #landing #nav ul i {
+    display: block;
+    margin-left: auto;
+  }
+  #landing #nav ul li {
+    display: none;
+  }
   #SP {
     -ms-grid-columns: (420px)[auto-fill];
         grid-template-columns: repeat(auto-fill, 420px);
