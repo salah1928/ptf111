@@ -84,6 +84,11 @@ img {
   right: 0;
 }
 
+#landing #nav a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
 #landing #nav ul {
   width: 50%;
   max-width: 200px;

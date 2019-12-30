@@ -7,6 +7,9 @@ router.get('/',(req,res)=>{
 router.get('/contact',(req,res)=>{
     res.render('PhoneShit/contact')
 })
+router.get('/about',(req,res)=>{
+    res.render('PhoneShit/about')
+})
 
 
 
