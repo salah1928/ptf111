@@ -5,8 +5,8 @@
 }
 ::-webkit-scrollbar
 {
-  width: 12px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
+  width: 12px; 
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track
@@ -26,6 +26,8 @@
     --br : #232323;
     --br2 : #161616;
     --accent : white;
+    --accent2 : cyan;
+    --font: 'Montserrat';
 }
 .appear{
     opacity: 1 !important;

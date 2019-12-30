@@ -26,8 +26,7 @@
         }
     }
 }
-#contactpage{
-    height: 97vh;
+#contactpage{ 
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -35,14 +34,16 @@
     background-position: center;
     background-size: cover;
     #form{
-       
         display: grid;
+        max-width: 600px;
+        
     }
     form{
-        background-color: rgba(255, 255, 255, 0.571);
+        background-color: var(--br);
         padding: 0.8vw;
         border-radius: 5px;
     }
+   
     form,#infos{
         align-self: center;
         display: flex;
@@ -51,9 +52,28 @@
         margin: 0 auto;
         .info,input,textarea{
             margin: 5% 0;
+            color: var(--accent);
         }
         input{
             height: 5vh;
+            
+        }
+        input,textarea{
+            border: none;
+            border-bottom: 1px var(--accent) solid;
+            background-color: transparent;
+            &::placeholder{
+                color: var(--accent);
+                font-size: var(--placeholderFont);
+            }
+            &:focus{
+                outline: none;
+                border-bottom: 1px var(--accent2) solid;
+                &::placeholder{
+                    color: var(--accent2);
+                    
+                }
+            }
         }
     }
 }
@@ -61,5 +81,10 @@
     #contactpage{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        #form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

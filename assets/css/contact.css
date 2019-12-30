@@ -43,7 +43,6 @@
 }
 
 #contactpage {
-  height: 97vh;
   width: 100vw;
   display: -ms-grid;
   display: grid;
@@ -57,10 +56,11 @@
 #contactpage #form {
   display: -ms-grid;
   display: grid;
+  max-width: 600px;
 }
 
 #contactpage form {
-  background-color: rgba(255, 255, 255, 0.571);
+  background-color: var(--br);
   padding: 0.8vw;
   border-radius: 5px;
 }
@@ -81,10 +81,58 @@
 
 #contactpage form .info, #contactpage form input, #contactpage form textarea, #contactpage #infos .info, #contactpage #infos input, #contactpage #infos textarea {
   margin: 5% 0;
+  color: var(--accent);
 }
 
 #contactpage form input, #contactpage #infos input {
   height: 5vh;
+}
+
+#contactpage form input, #contactpage form textarea, #contactpage #infos input, #contactpage #infos textarea {
+  border: none;
+  border-bottom: 1px var(--accent) solid;
+  background-color: transparent;
+}
+
+#contactpage form input::-webkit-input-placeholder, #contactpage form textarea::-webkit-input-placeholder, #contactpage #infos input::-webkit-input-placeholder, #contactpage #infos textarea::-webkit-input-placeholder {
+  color: var(--accent);
+  font-size: var(--placeholderFont);
+}
+
+#contactpage form input:-ms-input-placeholder, #contactpage form textarea:-ms-input-placeholder, #contactpage #infos input:-ms-input-placeholder, #contactpage #infos textarea:-ms-input-placeholder {
+  color: var(--accent);
+  font-size: var(--placeholderFont);
+}
+
+#contactpage form input::-ms-input-placeholder, #contactpage form textarea::-ms-input-placeholder, #contactpage #infos input::-ms-input-placeholder, #contactpage #infos textarea::-ms-input-placeholder {
+  color: var(--accent);
+  font-size: var(--placeholderFont);
+}
+
+#contactpage form input::placeholder, #contactpage form textarea::placeholder, #contactpage #infos input::placeholder, #contactpage #infos textarea::placeholder {
+  color: var(--accent);
+  font-size: var(--placeholderFont);
+}
+
+#contactpage form input:focus, #contactpage form textarea:focus, #contactpage #infos input:focus, #contactpage #infos textarea:focus {
+  outline: none;
+  border-bottom: 1px var(--accent2) solid;
+}
+
+#contactpage form input:focus::-webkit-input-placeholder, #contactpage form textarea:focus::-webkit-input-placeholder, #contactpage #infos input:focus::-webkit-input-placeholder, #contactpage #infos textarea:focus::-webkit-input-placeholder {
+  color: var(--accent2);
+}
+
+#contactpage form input:focus:-ms-input-placeholder, #contactpage form textarea:focus:-ms-input-placeholder, #contactpage #infos input:focus:-ms-input-placeholder, #contactpage #infos textarea:focus:-ms-input-placeholder {
+  color: var(--accent2);
+}
+
+#contactpage form input:focus::-ms-input-placeholder, #contactpage form textarea:focus::-ms-input-placeholder, #contactpage #infos input:focus::-ms-input-placeholder, #contactpage #infos textarea:focus::-ms-input-placeholder {
+  color: var(--accent2);
+}
+
+#contactpage form input:focus::placeholder, #contactpage form textarea:focus::placeholder, #contactpage #infos input:focus::placeholder, #contactpage #infos textarea:focus::placeholder {
+  color: var(--accent2);
 }
 
 @media (max-width: 1200px) {
@@ -93,6 +141,17 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+  }
+  #contactpage #form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=contact.css.map */
