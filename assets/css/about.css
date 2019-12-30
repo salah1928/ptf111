@@ -1,0 +1,81 @@
+#bck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+  background-image: url(/img/abt.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#abt {
+  margin-top: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: 80vh 30vh;
+      grid-template-rows: 80vh 30vh;
+}
+
+#abt #abtheader, #abt #philosophy {
+  margin-left: 20%;
+  display: -ms-grid;
+  display: grid;
+}
+
+#abt #abtheader {
+  width: 80%;
+  -ms-grid-rows: 1fr 40%;
+      grid-template-rows: 1fr 40%;
+}
+
+#abt #abtheader h2 {
+  font-size: calc(3vw + 1rem);
+  margin-left: -10%;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+#abt #philosophy {
+  -ms-grid-rows: 10% 1fr;
+      grid-template-rows: 10% 1fr;
+  grid-row-gap: 10px;
+}
+
+#abt #philosophy #a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
+#abt #philosophy #a p {
+  font-size: calc(0.5rem + 0.5vw);
+}
+
+@media (max-width: 1200px) {
+  #abt #philosophy #a {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=about.css.map */
