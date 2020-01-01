@@ -1,49 +1,5 @@
-#nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  width: 80%;
-  height: 10vh;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: var(--accent);
-}
-
-#nav a {
-  text-decoration: none;
-  color: var(--accent);
-}
-
-#nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  max-width: 250px;
-}
-
-#nav ul #ham {
-  display: none;
-}
-
 #contactpage {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: -ms-grid;
   display: grid;
@@ -57,13 +13,13 @@
 #contactpage #form {
   display: -ms-grid;
   display: grid;
-  max-width: 600px;
 }
 
 #contactpage form {
   background-color: var(--br);
   padding: 0.8vw;
   border-radius: 5px;
+  max-width: 500px;
 }
 
 #contactpage form, #contactpage #infos {
@@ -153,6 +109,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 5%;
   }
 }
 /*# sourceMappingURL=contact.css.map */
