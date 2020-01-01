@@ -98,11 +98,11 @@ nav{
                     justify-content: space-around;
                     align-self: flex-end;
                     justify-self: space;
-                    width: 90%;
+                    max-width: 900px;
                     a{
                         padding: 0.5rem 0.8rem;
                         border: 1px var(--accent) solid;
-                        width: 30%;
+                        max-width: 300px;
                         text-align: center;
                         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                         color: var(--accent);
@@ -183,4 +183,7 @@ nav{
             }
         }
     }
+}
+@media(max-width:700px){
+    #btn{a{padding:0.2rem 0.45rem !important;}}
 }
