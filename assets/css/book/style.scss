@@ -55,6 +55,7 @@ nav{
     }
 }
 #landing{
+   
     #ldn1,#ldn2{
         position: absolute;
         object-fit: cover;
@@ -133,7 +134,7 @@ nav{
            text-align: right;
        }
     }
-    height: 100vh;
+    height: 115vh;
     width: 100vw;
     display: grid;
     grid-template-rows: 60% 1fr;
@@ -154,7 +155,7 @@ nav{
     p{
         font-size: calc(0.5vw + 0.5rem);
     }
-    margin: 20% auto;
+    margin: 5% auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -176,6 +177,37 @@ nav{
                 grid-area: t;
             }
             grid-template-areas: "t m";
+        }
+    }
+}
+#abt{
+    height: 150vh;
+    display: grid;
+    grid-template-rows: 1fr 30%;
+    #top{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        #imgs{
+            position: relative;
+            img{
+                position: absolute;
+                object-fit: cover;
+                height: 50vh;
+                &:nth-child(3){
+                    right: 0;
+                    transform: translateX(-50px);
+                }
+                &:nth-child(2){
+                    bottom: 0;
+                    transform: translateX(+150px);
+
+                }
+                &:nth-child(1){
+                 
+                    transform: translateY(+150px);
+
+                }
+            }
         }
     }
 }
@@ -210,6 +242,7 @@ nav{
                 }
             }
         }
+        
     }
     #ldn1{
         top: 0;
@@ -249,7 +282,7 @@ nav{
         
     }}
     #bnf{
-        grid-template-columns: 0.8fr;
+        grid-template-columns: 1fr;
         justify-content: center;
         .bnf{
             &:nth-child(1),&:nth-child(3){
