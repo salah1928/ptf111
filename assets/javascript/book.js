@@ -38,6 +38,8 @@ const t1 = new TimelineMax();
 
 t1
 .fromTo(bnf,0,{opacity:"1"},{opacity:"0"})
+.fromTo(abt,0,{opacity:"1"},{opacity:"0"})
+.fromTo(contact,0,{opacity:"1"},{opacity:"0"})
 .fromTo(ldn1,1,{y:'-100%'},{y:"0%",ease:Power2.easeInOut})
 .fromTo(ldn2,1,{y:'200%',opacity:"0"},{y:"0%",opacity:"1",ease:Power2.easeInOut},'-=0.9')
 .fromTo(title,1,{x:'-200%'},{x:'0%',ease:Power2.easeInOut},'-=0.7')
@@ -73,7 +75,7 @@ const bnfobs = new IntersectionObserver(function(e,o){
         }
         
     })
-},{rootMargin:"0px 0px -200px 0px"})
+},{rootMargin:"0px",threshold:"0.4"})
 bnfobs.observe(bnf)
 
 const abtobs = new IntersectionObserver(function(e,o){
@@ -82,6 +84,7 @@ const abtobs = new IntersectionObserver(function(e,o){
             return
         }else{
             const t3 = new TimelineMax();
+            t1.fromTo(abt,0,{opacity:"0"},{opacity:"1"})
             t3.fromTo(abttit,0.9,{x:"-200%",opacity:"0"},{x:"0%",opacity:"1",ease:Power2.easeInOut})
             .fromTo(abtimg,0.9,{x:"200%",opacity:"0"},{x:"0%",opacity:"1",ease:Power2.easeInOut},'-=0.9')
             .fromTo(abttxt,0.9,{x:"-200%",opacity:"0"},{x:"0%",opacity:"1",ease:Power2.easeInOut},'-=0.5')
@@ -94,7 +97,7 @@ const abtobs = new IntersectionObserver(function(e,o){
             abtobs.unobserve(abt)
         }
     })
-},{rootMargin:"0px 0px 0px 0px"})
+},{rootMargin:"0px",threshold:"0.4"})
 abtobs.observe(abt)
 
 const contactobs = new IntersectionObserver(function(e,o){
@@ -103,9 +106,8 @@ const contactobs = new IntersectionObserver(function(e,o){
             return
         }else{
             const t4 = new TimelineMax();
-
+            t1.fromTo(contact,0,{opacity:"0"},{opacity:"1"})
             t4
-        
             .fromTo(cicon,0.5,{x:"-200%",opacity:"0"},{x:"0%",opacity:"1",ease:Power2.easeInOut})
             .fromTo(ctit,0.6,{x:"-200%",opacity:"0"},{x:"0%",opacity:"1",ease:Power2.easeInOut},'-=0.3')
             .fromTo(cicon2,0.5,{x:"-200%",opacity:"0"},{x:"0%",opacity:"1",ease:Power2.easeInOut},'-=0.2')
@@ -127,6 +129,6 @@ const contactobs = new IntersectionObserver(function(e,o){
             contactobs.unobserve(contact)
         }
     })
-},{rootMargin:"0px 0px 0px 0px"})
+},{rootMargin:"0px",threshold:"0.4"})
 contactobs.observe(contact)
 
