@@ -33,6 +33,10 @@ const fipt1 = document.querySelectorAll('.fipt1')
 const fipt2 = document.querySelectorAll('.fipt2')
 const fipt3 = document.querySelectorAll('.fipt3')
 
+let tresh = 0.4;
+if(window.screen.width < 500){
+     tresh = 1;
+}
 
 const t1 = new TimelineMax();
 
@@ -75,7 +79,7 @@ const bnfobs = new IntersectionObserver(function(e,o){
         }
         
     })
-},{rootMargin:"0px",threshold:"0.4"})
+},{rootMargin:"0px",tresh})
 bnfobs.observe(bnf)
 
 const abtobs = new IntersectionObserver(function(e,o){
@@ -97,7 +101,7 @@ const abtobs = new IntersectionObserver(function(e,o){
             abtobs.unobserve(abt)
         }
     })
-},{rootMargin:"0px",threshold:"0.4"})
+},{rootMargin:"0px",tresh})
 abtobs.observe(abt)
 
 const contactobs = new IntersectionObserver(function(e,o){
@@ -129,6 +133,6 @@ const contactobs = new IntersectionObserver(function(e,o){
             contactobs.unobserve(contact)
         }
     })
-},{rootMargin:"0px",threshold:"0.4"})
+},{rootMargin:"0px",tresh})
 contactobs.observe(contact)
 
