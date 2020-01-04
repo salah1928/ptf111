@@ -359,6 +359,11 @@ nav ul li {
 
 #contact #cred .c h4 {
   text-align: right;
+  color: var(--white);
+}
+
+#contact #cred .c h3, #contact #cred .c i {
+  color: var(--accent);
 }
 
 #contact #form {
