@@ -94,8 +94,8 @@
           align-items: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 300px);
+  -ms-grid-columns: (300px)[4];
+      grid-template-columns: repeat(4, 300px);
   border-bottom: var(--accent) 1px solid;
 }
 
@@ -471,8 +471,10 @@
   display: grid;
   width: 100%;
   width: calc(100vw - 3rem);
-  -ms-grid-columns: 40% 1fr;
-      grid-template-columns: 40% 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 80%;
+      grid-template-rows: 1fr 80%;
   margin: 5% auto;
 }
 

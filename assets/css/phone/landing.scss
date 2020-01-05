@@ -76,9 +76,9 @@
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill,300px);
+    grid-template-columns: repeat(4,300px);
     border-bottom: var(--accent) 1px solid;
-    
+  
     .r{
         margin: 5% 2%;
         h4{
@@ -397,7 +397,8 @@
     
     width: 100%;
     width: calc(100vw - 3rem);
-    grid-template-columns: 40% 1fr;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 80%;
     margin: 5% auto;
     #cred{
         flex-direction: column;
