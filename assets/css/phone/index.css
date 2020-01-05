@@ -6,7 +6,7 @@
 :root {
   --br: #232323;
   --br2: #161616;
-  --accent: white;
+  --accent: rgb(211, 211, 211);
   --accent2: cyan;
   --font: 'Montserrat';
 }
