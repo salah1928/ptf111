@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 :root{
     --br : #232323;
@@ -9,6 +9,24 @@
     --accent : rgb(211, 211, 211);
     --accent2 : cyan;
     --font: 'Montserrat';
+    --psize:calc(0.5vw + 0.5rem);
+    --msize:calc(0.5vw + 0.7rem);
+    --bsize:calc(1vw + 1rem)
+}
+::-webkit-scrollbar
+{
+  width: 12px; 
+  height: 12px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
 }
 body , html{
     overflow-x: hidden;
@@ -98,31 +116,19 @@ footer{
         transform: rotate(180deg);
     }
 }
-@media (min-width:1000px){
-    ::-webkit-scrollbar
-{
-  width: 12px; 
-  height: 12px;
-}
-
-::-webkit-scrollbar-track
-{
-  background: rgba(0, 0, 0, 0.1);
-}
-
-::-webkit-scrollbar-thumb
-{
-  background: rgba(0, 0, 0, 0.5);
-}
-}
 @media (max-width:1000px){
     #nav{
-        justify-content: center;
+      
+        display: grid;
+       justify-content: center;
+
         ul{
+            align-items: center;
             a{
                 display: flex;
-            width: 100%;
+           
             margin: 0 auto;
+            justify-self: center;
             }
             i{
                 display: block;
@@ -131,6 +137,7 @@ footer{
 
             li{
                 display: none;
+             position: absolute;
             }
         }
 

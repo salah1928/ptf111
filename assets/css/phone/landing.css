@@ -28,22 +28,8 @@
 }
 
 #landing #page {
-  height: 100%;
-  width: 100%;
-}
-
-#landing #page #br {
-  top: 0;
-  left: 0;
-  right: 0;
   height: 100vh;
-  width: 100%;
-  background-image: url(/img/ldn.jpg);
-  z-index: -1;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100vw;
 }
 
 #landing #page #txt {
@@ -51,8 +37,8 @@
   left: 25vw;
   right: 0;
   height: 100vh;
-  width: 50%;
-  margin-top: 15%;
+  width: 100%;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,26 +48,50 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  position: absolute;
-  height: 50%;
-  max-height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/img/cta.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #landing #page #txt #btns {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 #landing #page #txt #btns a {
-  padding: 0.8rem;
+  padding: calc(0.6vw + 0.4rem);
+  font-size: calc(0.5vw + 0.7rem);
   border: solid 1px var(--accent);
   text-decoration: none;
   color: var(--accent);
   margin: 0 auto;
   position: relative;
+}
+
+#landing #page #txt #h1p {
+  width: 70%;
+  min-width: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+#landing #page #txt #h1p p {
+  justify-self: flex-end;
+  font-size: calc(0.5vw + 0.5rem);
+}
+
+#landing #page #txt #h1p h1 {
+  font-size: calc(1vw + 1rem);
 }
 
 #SP {
@@ -110,7 +120,7 @@
 }
 
 #SP .r p {
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: calc(0.5rem + 0.6vw);
   width: 50%;
   min-width: 250px;
   margin: 0.5% auto;
@@ -168,7 +178,7 @@
     left: -2px;
     width: calc(100% + 4px);
     height: calc(100% - 12px);
-    background: url(/img/ldn.jpg);
+    background: url(/img/cta.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +199,7 @@
     top: -2px;
     height: calc(100% + 4px);
     width: calc(100% - 12px);
-    background: url(/img/ldn.jpg);
+    background: url(/img/cta.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -306,6 +316,10 @@
   padding: 0.5rem;
 }
 
+#f .f .txt p {
+  font-size: calc(0.5rem + 0.6vw);
+}
+
 #f .f2 .txt, #f .f4 .txt {
   margin-left: auto;
   margin-right: 5%;
@@ -332,6 +346,7 @@
 
 #specs div ul li {
   margin-bottom: 3%;
+  font-size: calc(0.5rem + 0.6vw);
 }
 
 #cta {
@@ -394,7 +409,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/img/abt.jpg);
+  background-image: url(/img/ldn.jpg);
   max-width: 1000px;
   display: -ms-grid;
   display: grid;
@@ -428,8 +443,10 @@
 }
 
 #abt div p {
-  font-size: 16px;
+  font-size: calc(0.5rem + 0.6vw);
   padding: 0 5%;
+  text-align: center;
+  margin-top: 5%;
 }
 
 #abt #since {
@@ -473,36 +490,29 @@
   width: calc(100vw - 3rem);
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 80%;
-      grid-template-rows: 1fr 80%;
-  margin: 5% auto;
+  -ms-grid-rows: 20% 1fr;
+      grid-template-rows: 20% 1fr;
+  margin: 10% auto;
 }
 
 #contact #cred {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  max-width: 200px;
+  max-width: 800px;
+  width: 80%;
   margin: 0 auto;
-}
-
-#contact #cred .c {
-  width: 100%;
 }
 
 #contact #cred .c div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -512,23 +522,37 @@
 #contact #cred .c h4 {
   text-align: right;
   color: var(--white);
+  font-size: calc(0.5vw + 0.7rem);
 }
 
 #contact #cred .c h3, #contact #cred .c i {
   color: var(--accent);
+  font-size: calc(0.5vw + 0.5rem);
+}
+
+#contact #cred .c i {
+  margin-right: 5%;
+  font-size: calc(0.5vw + 0.5rem);
 }
 
 #contact #form {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 2px solid var(--accent);
+  border: 1px solid var(--accent);
   max-width: 500px;
+  min-width: 200px;
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: var(--br2);
 }
 
 #contact #form #tit {
   height: 10%;
   color: var(--white);
   padding-top: 5%;
+  text-align: center;
+  font-size: calc(0.7vw + 0.7rem);
 }
 
 #contact #form form {
@@ -539,7 +563,6 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 90%;
   padding: 5% 0;
 }
 
@@ -585,7 +608,16 @@
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: var(--accent);
-  color: var(--white);
+  color: black;
+}
+
+@media (max-width: 500px) {
+  #cred {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .flexcenter {
